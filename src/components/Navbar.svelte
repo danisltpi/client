@@ -25,8 +25,9 @@
 			margin-bottom: 1rem;
 			font-size: 1.5rem;
 
-			&.active {
-				color: #a8a8a8;
+			&.active,
+			&:hover {
+				opacity: 0.5;
 			}
 		}
 	}

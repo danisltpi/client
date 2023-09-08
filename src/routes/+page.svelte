@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { urlFor, type Slug } from './../lib/sanity';
 	import { goto } from '$app/navigation';
 	import type { PageData } from './$types';
+	import { urlFor, type Slug } from './../lib/sanity';
 
 	export let data: PageData;
 
@@ -47,6 +47,7 @@
 
 		&:hover {
 			cursor: pointer;
+			opacity: 0.5;
 		}
 	}
 

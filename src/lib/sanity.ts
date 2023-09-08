@@ -29,5 +29,5 @@ export const fetchArticleContent = async (slug: string) => {
 export const builder = imageUrlBuilder(client);
 
 export const urlFor = (source: string) => {
-	return builder.image(source);
+	return builder.image(source).format('webp');
 };

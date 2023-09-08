@@ -37,6 +37,8 @@
 				width: 100%;
 				z-index: -10;
 				height: 30rem;
+				object-fit: cover;
+				overflow: hidden;
 			}
 
 			.overlay-text {
@@ -48,13 +50,6 @@
 				h1 {
 					font-weight: 500;
 				}
-			}
-		}
-
-		@media (width >= 768px) {
-			img {
-				object-fit: cover;
-				overflow: hidden;
 			}
 		}
 	}

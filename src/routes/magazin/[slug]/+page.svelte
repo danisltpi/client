@@ -21,12 +21,13 @@
 </article>
 
 <style lang="scss">
-	article.article-body {
-		width: 100%;
-
+	@media (width >= 768px) {
 		.main-content {
 			width: 66%;
 		}
+	}
+	article.article-body {
+		width: 100%;
 
 		div.title-image {
 			width: 100%;

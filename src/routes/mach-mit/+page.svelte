@@ -63,10 +63,6 @@
 		margin-bottom: 1rem;
 	}
 
-	section {
-		padding-left: 1rem;
-	}
-
 	@media (width >= 768px) {
 		section {
 			width: 66%;

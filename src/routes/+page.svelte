@@ -43,7 +43,7 @@
 
 	div.title-image-card {
 		padding-top: 1rem;
-		width: 20rem;
+		width: 19rem;
 
 		&:hover {
 			cursor: pointer;
@@ -54,7 +54,7 @@
 	img {
 		object-fit: cover;
 		overflow: hidden;
-		width: 20rem;
-		height: 20rem;
+		width: 19rem;
+		height: 19rem;
 	}
 </style>

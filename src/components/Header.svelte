@@ -47,7 +47,7 @@
 		margin: 0;
 		padding-top: 0.5rem;
 		text-align: center;
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 
 	button.material-icons-outlined {

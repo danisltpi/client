@@ -48,6 +48,7 @@
 				max-width: 20rem;
 				position: absolute;
 				color: white;
+				padding-left: 1rem;
 
 				h1 {
 					font-weight: 500;

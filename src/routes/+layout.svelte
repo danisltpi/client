@@ -18,18 +18,7 @@
 	}
 
 	div.slot-container {
-		display: flex;
-		padding: 2rem 3rem 1rem 1rem;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	/* big screen layout */
-	@media (width >= 768px) {
-		div.slot-container {
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
+		padding: 2rem 3rem 1rem 0;
 	}
 
 	:global(body) {

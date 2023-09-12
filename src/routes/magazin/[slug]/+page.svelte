@@ -26,6 +26,9 @@
 			width: 66%;
 		}
 	}
+	.main-content {
+		padding-left: 1rem;
+	}
 
 	article.article-body {
 		width: 100%;

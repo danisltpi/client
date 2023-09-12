@@ -56,6 +56,10 @@ Redaktion Leopold Schaefer, Redaktion Henry Tse, Social Media Lilly Wetzel, Reda
 		font-weight: 300;
 	}
 
+	section {
+		padding-left: 1rem;
+	}
+
 	@media (width >= 768px) {
 		section {
 			width: 66%;

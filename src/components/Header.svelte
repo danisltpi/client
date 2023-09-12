@@ -32,6 +32,7 @@
 		padding: 0 1rem;
 		font-size: 1.5rem;
 		appearance: none;
+		color: black;
 	}
 
 	header.align-horizontal {

@@ -15,7 +15,7 @@ export const client = createClient({
 });
 
 export const fetchArticleCards = async () => {
-	const query = '*[_type == "magazine"]{title, caption, image, slug}';
+	const query = '*[_type == "magazine"] | order(publishedAt desc) {title, caption, image, slug}';
 	const articles = await client.fetch(query);
 	return articles;
 };

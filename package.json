@@ -37,6 +37,7 @@
 	"dependencies": {
 		"@sanity/client": "^6.4.9",
 		"@sanity/image-url": "^1.0.2",
+		"material-icons": "^1.13.11",
 		"normalize.css": "^8.0.1"
 	}
 }

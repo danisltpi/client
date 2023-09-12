@@ -1,4 +1,6 @@
 <script>
+	import 'material-icons/iconfont/material-icons.css';
+
 	function handleMenuClick() {
 		console.log('hello');
 	}
@@ -9,11 +11,11 @@
 </script>
 
 <header class="align-horizontal">
-	<button on:click={handleMenuClick} class="material-symbols-outlined menu-button">menu</button>
+	<button on:click={handleMenuClick} class="material-icons-outlined menu-button">menu</button>
 	<h1 class="title">
 		<a href="/"> KENN/CH </a>
 	</h1>
-	<button on:click={handleSearchClick} class="material-symbols-outlined menu-button">search</button>
+	<button on:click={handleSearchClick} class="material-icons-outlined menu-button">search</button>
 </header>
 
 <style lang="scss">
@@ -29,6 +31,7 @@
 		border: none !important;
 		padding: 0 1rem;
 		font-size: 1.5rem;
+		appearance: none;
 	}
 
 	header.align-horizontal {
@@ -47,11 +50,11 @@
 		font-size: 2.2rem;
 	}
 
-	button.material-symbols-outlined {
+	button.material-icons-outlined {
 		font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 	}
 
-	button.material-symbols-outlined:hover {
+	button.material-icons-outlined:hover {
 		cursor: pointer;
 	}
 

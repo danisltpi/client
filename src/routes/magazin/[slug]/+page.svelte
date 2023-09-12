@@ -26,6 +26,7 @@
 			width: 66%;
 		}
 	}
+
 	article.article-body {
 		width: 100%;
 

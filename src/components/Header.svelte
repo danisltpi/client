@@ -2,12 +2,16 @@
 	import 'material-icons/iconfont/material-icons.css';
 
 	function handleMenuClick() {
-		console.log('hello');
+		toggleTheme();
 	}
 
 	function handleSearchClick() {
 		console.log('hello');
 	}
+
+	const toggleTheme = () => {
+		window.document.body.classList.toggle('dark');
+	};
 </script>
 
 <header class="align-horizontal">
@@ -23,7 +27,7 @@
 	header {
 		position: fixed;
 		z-index: 10;
-		background-color: $light-bg-color;
+		background-color: inherit;
 	}
 
 	button.menu-button {
@@ -32,7 +36,7 @@
 		padding: 0 1rem;
 		font-size: 1.5rem;
 		appearance: none;
-		color: black;
+		color: inherit;
 	}
 
 	header.align-horizontal {

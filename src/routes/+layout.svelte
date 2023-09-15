@@ -22,8 +22,18 @@
 	}
 
 	:global(body) {
+		transition: background-color 0.3s;
+
 		color: $light-fg-color;
 		background-color: $light-bg-color;
-		transition: background-color 0.3s;
+	}
+
+	:global(body.dark) {
+		color: $dark-fg-color;
+		background-color: $dark-bg-color;
+	}
+
+	:global(div) {
+		background-color: inherit;
 	}
 </style>

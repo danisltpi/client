@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PostImage from './../../../components/PostImage.svelte';
 	import { urlFor } from './../../../lib/sanity';
 	// @ts-ignore
 	import { PortableText } from '@portabletext/svelte';
@@ -16,7 +17,14 @@
 		<img src={urlFor(data.articleContent.image)} alt="bild" />
 	</div>
 	<div class="main-content">
-		<PortableText value={data.articleContent.content} />
+		<PortableText
+			value={data.articleContent.content}
+			components={{
+				types: {
+					image: PostImage
+				}
+			}}
+		/>
 	</div>
 </article>
 

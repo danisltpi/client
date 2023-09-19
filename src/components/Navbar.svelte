@@ -5,8 +5,8 @@
 <nav class="vertical">
 	<a href="/ueber-uns" class:active={$page.route.id === '/ueber-uns'}>über uns</a>
 	<a href="/mach-mit" class:active={$page.route.id === '/mach-mit'}>mach mit!</a>
-	<a href="/ausgaben" class:active={$page.route.id === '/ausgaben'}>ausgaben</a>
-	<a href="/shop" class:active={$page.route.id === '/shop'}>shop</a>
+	<!-- <a href="/ausgaben" class:active={$page.route.id === '/ausgaben'}>ausgaben</a>
+	<a href="/shop" class:active={$page.route.id === '/shop'}>shop</a> -->
 </nav>
 
 <style lang="scss">

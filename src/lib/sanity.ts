@@ -26,6 +26,12 @@ export const fetchArticleContent = async (slug: string) => {
 	return content;
 };
 
+export const fetchPageContent = async (slug: string) => {
+	const query = `*[_type == "page" && slug.current == '${slug}'][0]{title, content}`;
+	const content = await client.fetch(query);
+	return content;
+};
+
 export const builder = imageUrlBuilder(client);
 
 export const urlFor = (source: string) => {

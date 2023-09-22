@@ -1,14 +1,9 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { gotoArticle } from '$lib/util';
 	import type { PageData } from './$types';
-	import { urlFor, type Slug } from './../lib/sanity';
+	import { urlFor } from './../lib/sanity';
 
 	export let data: PageData;
-
-	const gotoArticle = (slug: Slug) => {
-		goto('/magazin/' + slug.current);
-		return null;
-	};
 </script>
 
 <div class="flex-cards">

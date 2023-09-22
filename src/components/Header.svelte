@@ -1,13 +1,10 @@
 <script>
 	import 'material-icons/iconfont/material-icons.css';
+	import { toggleSearch } from '../stores/search';
 
-	function handleMenuClick() {
+	const handleMenuClick = () => {
 		toggleTheme();
-	}
-
-	function handleSearchClick() {
-		console.log('hello');
-	}
+	};
 
 	const toggleTheme = () => {
 		window.document.body.classList.toggle('dark');
@@ -19,7 +16,7 @@
 	<h1 class="title">
 		<a href="/"> KENN/CH </a>
 	</h1>
-	<button on:click={handleSearchClick} class="material-icons-outlined menu-button">search</button>
+	<button on:click={toggleSearch} class="material-icons-outlined menu-button">search</button>
 </header>
 
 <style lang="scss">

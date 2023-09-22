@@ -32,6 +32,12 @@ export const fetchPageContent = async (slug: string) => {
 	return content;
 };
 
+export const fetchArticlesByTitle = async (search: string) => {
+	const query = `*[_type == "magazine" && title match "${search}*"] | order(publishedAt desc) {title, caption, image, slug}`;
+	const articles = await client.fetch(query);
+	return articles;
+};
+
 export const builder = imageUrlBuilder(client);
 
 export const urlFor = (source: string) => {

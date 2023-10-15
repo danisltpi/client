@@ -36,6 +36,7 @@
 	@media (width >= 768px) {
 		.main-content {
 			width: 66%;
+			padding-left: 0;
 		}
 	}
 	.main-content {
@@ -44,6 +45,10 @@
 
 	article.article-body {
 		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
 		div.title-image {
 			width: 100%;

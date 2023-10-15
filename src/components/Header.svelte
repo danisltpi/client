@@ -12,7 +12,7 @@
 </script>
 
 <header class="align-horizontal">
-	<button on:click={handleMenuClick} class="material-icons-outlined menu-button">menu</button>
+	<button on:click={handleMenuClick} class="material-icons-outlined menu-button hide">menu</button>
 	<h1 class="title">
 		<a href="/"> KENN/CH </a>
 	</h1>
@@ -21,6 +21,9 @@
 
 <style lang="scss">
 	@import '$lib/sass/theme';
+	.hide {
+		visibility: hidden;
+	}
 	header {
 		position: fixed;
 		z-index: 10;

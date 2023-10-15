@@ -5,6 +5,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>{data.pageContent.title}</title>
+</svelte:head>
+
 <div>
 	<PortableText value={data.pageContent.content} />
 </div>

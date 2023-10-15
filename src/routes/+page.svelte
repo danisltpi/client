@@ -6,6 +6,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>kennich</title>
+</svelte:head>
+
 <div class="flex-cards">
 	{#if data.articles && data.articles.length}
 		{#each data.articles as article}

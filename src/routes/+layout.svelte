@@ -52,18 +52,18 @@
 	}
 
 	:global(body) {
-		transition: background-color 0.3s;
-		transition: filter 0.3s ease; /* Smooth filter transition for blur effect */
 		color: $light-fg-color;
 		background-color: $light-bg-color;
 	}
 
-	:global(body.dark) {
-		color: $dark-fg-color;
-		background-color: $dark-bg-color;
-	}
-
 	:global(div) {
 		background-color: inherit;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:global(body) {
+			color: $dark-fg-color;
+			background-color: $dark-bg-color;
+		}
 	}
 </style>

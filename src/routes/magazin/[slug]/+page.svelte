@@ -8,6 +8,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>{data.articleContent.title}</title>
+</svelte:head>
+
 <article class="article-body">
 	<div class="title-image">
 		<div class="overlay-text">

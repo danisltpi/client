@@ -88,7 +88,7 @@
 			padding: 1rem;
 
 			input {
-				width: 80vw;
+				width: 90%;
 				height: 100%;
 				border: none;
 				font-size: 1.5rem;

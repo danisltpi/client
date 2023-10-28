@@ -43,8 +43,9 @@
 		z-index: 1000;
 		background: rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(1px);
-		height: 100%;
-		width: 100%;
+		-webkit-backdrop-filter: blur(1px);
+		height: 100vh;
+		width: 100vw;
 	}
 
 	div.slot-container {

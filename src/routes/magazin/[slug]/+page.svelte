@@ -41,6 +41,7 @@
 	}
 	.main-content {
 		padding-left: 1rem;
+		line-height: 1.5;
 	}
 
 	article.article-body {

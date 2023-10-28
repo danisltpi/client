@@ -32,8 +32,8 @@ export const fetchPageContent = async (slug: string) => {
 	return content;
 };
 
-export const fetchArticlesByTitle = async (search: string) => {
-	const query = `*[_type == "magazine" && title match "${search}*"] | order(publishedAt desc) {title, caption, image, slug}`;
+export const fetchArticlesByTitleAndCaption = async (search: string) => {
+	const query = `*[_type == "magazine" && [title, caption] match "${search}*"] | order(publishedAt desc) {title, caption, image, slug}`;
 	const articles = await client.fetch(query);
 	return articles;
 };

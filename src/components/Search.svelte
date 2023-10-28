@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fetchArticlesByTitle, urlFor, type Slug } from '$lib/sanity';
+	import { fetchArticlesByTitleAndCaption, urlFor, type Slug } from '$lib/sanity';
 	import { gotoArticle } from '$lib/util';
 	import { toggleSearch } from '../stores/search';
 
@@ -15,7 +15,7 @@
 
 	const handleInput = async () => {
 		if (searchInput.length >= 2) {
-			filteredArticles = await fetchArticlesByTitle(searchInput);
+			filteredArticles = await fetchArticlesByTitleAndCaption(searchInput);
 		} else {
 			filteredArticles = [];
 		}

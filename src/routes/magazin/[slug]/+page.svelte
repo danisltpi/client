@@ -6,6 +6,14 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+
+	const utcToGermanDate = (utcDate: string) => {
+		return new Date(utcDate).toLocaleDateString('de-DE', {
+			day: 'numeric',
+			month: 'long',
+			year: 'numeric'
+		});
+	};
 </script>
 
 <svelte:head>
@@ -13,12 +21,16 @@
 </svelte:head>
 
 <article class="article-body">
+	<div class="title-section">
+		<h1>{data.articleContent.title}</h1>
+		<p>{data.articleContent.caption}</p>
+		<p>{utcToGermanDate(data.articleContent.publishedAt)}</p>
+	</div>
 	<div class="title-image">
-		<div class="overlay-text">
-			<h1>{data.articleContent.title}</h1>
-			<p>{data.articleContent.caption}</p>
-		</div>
-		<img src={urlFor(data.articleContent.image)} alt="bild" />
+		<figure>
+			<img src={urlFor(data.articleContent.image)} alt="bild" />
+			<figcaption>Caption goes here</figcaption>
+		</figure>
 	</div>
 	<div class="main-content">
 		<PortableText
@@ -55,25 +67,19 @@
 			width: 100%;
 			position: relative;
 			display: inline-block;
-
 			img {
 				width: 100%;
-				z-index: -10;
 				height: 30rem;
 				object-fit: cover;
 				overflow: hidden;
 			}
+		}
 
-			.overlay-text {
-				width: 70%;
-				max-width: 20rem;
-				position: absolute;
-				color: white;
-				padding-left: 1rem;
-
-				h1 {
-					font-weight: 500;
-				}
+		div.title-section {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			h1 {
+				font-weight: 500;
 			}
 		}
 	}

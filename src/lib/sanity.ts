@@ -21,7 +21,7 @@ export const fetchArticleCards = async () => {
 };
 
 export const fetchArticleContent = async (slug: string) => {
-	const query = `*[_type == "magazine" && slug.current == '${slug}'][0]{title, caption, image, content}`;
+	const query = `*[_type == "magazine" && slug.current == '${slug}'][0]{title, caption, image, content, publishedAt, author, imageCaption, imageAuthor, category}`;
 	const content = await client.fetch(query);
 	return content;
 };

@@ -23,7 +23,7 @@
 		line-height: 1.5;
 	}
 
-	@media (width >= 768px) {
+	@media (min-width: 768px) {
 		div {
 			width: 66%;
 		}

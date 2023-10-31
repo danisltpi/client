@@ -53,6 +53,9 @@
 		padding-top: 0.5rem;
 		text-align: center;
 		font-size: 2rem;
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 
 	button.material-icons-outlined {

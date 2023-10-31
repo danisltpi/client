@@ -22,14 +22,19 @@
 
 <article class="article-body">
 	<div class="title-section">
-		<h1>{data.articleContent.title}</h1>
-		<p>{data.articleContent.caption}</p>
 		<p>{utcToGermanDate(data.articleContent.publishedAt)}</p>
+		<p><b>{data.articleContent.caption}</b></p>
+		<h1>{data.articleContent.title}</h1>
 	</div>
 	<div class="title-image">
 		<figure>
 			<img src={urlFor(data.articleContent.image)} alt="bild" />
-			<figcaption>Caption goes here</figcaption>
+			{#if data.articleContent.imageCaption}
+				<figcaption>{data.articleContent.imageCaption}</figcaption>
+			{/if}
+			{#if data.articleContent.imageCreator}
+				<figcaption>Foto: {data.articleContent.imageCreator}</figcaption>
+			{/if}
 		</figure>
 	</div>
 	<div class="main-content">
@@ -45,7 +50,7 @@
 </article>
 
 <style lang="scss">
-	@media (width >= 768px) {
+	@media (min-width: 768px) {
 		.main-content {
 			width: 66%;
 			padding-left: 0;
@@ -57,6 +62,7 @@
 	}
 
 	article.article-body {
+		margin-top: 1.5rem;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -69,7 +75,7 @@
 			display: inline-block;
 			img {
 				width: 100%;
-				height: 30rem;
+				height: 45vh;
 				object-fit: cover;
 				overflow: hidden;
 			}

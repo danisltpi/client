@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import Footer from '../components/Footer.svelte';
 	import Search from '../components/Search.svelte';
 	import { isSearchOpen, toggleSearch } from '../stores/search';
 	import Header from './../components/Header.svelte';
@@ -20,11 +21,14 @@
 	</div>
 {/if}
 
-<Header />
-<div class="slot-container">
-	<slot />
+<div class="over-footer">
+	<Header />
+	<div class="slot-container">
+		<slot />
+	</div>
+	<Navbar />
 </div>
-<Navbar />
+<Footer />
 
 <style lang="scss">
 	@import '$lib/sass/theme';

@@ -41,5 +41,5 @@ export const fetchArticlesByTitleAndCaption = async (search: string) => {
 export const builder = imageUrlBuilder(client);
 
 export const urlFor = (source: string) => {
-	return builder.image(source).format('webp');
+	return builder.image(source).format('webp').fit('crop');
 };

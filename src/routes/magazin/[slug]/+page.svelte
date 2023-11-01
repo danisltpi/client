@@ -53,17 +53,15 @@
 	@media (min-width: 768px) {
 		.main-content {
 			width: 66%;
-			padding-left: 0;
 		}
 	}
 	.main-content {
-		padding-left: 1rem;
 		line-height: 1.5;
+		padding-left: 1rem;
 	}
 
 	article.article-body {
 		margin-top: 1.5rem;
-		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -71,8 +69,6 @@
 
 		div.title-image {
 			width: 100%;
-			position: relative;
-			display: inline-block;
 			img {
 				width: 100%;
 				height: 45vh;
@@ -82,8 +78,8 @@
 		}
 
 		div.title-section {
-			padding-left: 1rem;
-			padding-right: 1rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
 			h1 {
 				font-weight: 500;
 			}

@@ -4,10 +4,21 @@
 </script>
 
 <div>
-	<img src={urlFor(portableText.value)} alt="" />
+	<figure>
+		<img src={urlFor(portableText.value)} alt="bild" />
+		{#if portableText.value.creator}
+			<figcaption>Foto: {portableText.value.creator}</figcaption>
+		{/if}
+	</figure>
 </div>
 
 <style>
+	figure {
+		margin: 0;
+	}
+	figcaption {
+		font-size: 0.75rem;
+	}
 	div {
 		display: flex;
 		justify-content: center;

@@ -22,7 +22,6 @@
 
 <article class="article-body">
 	<div class="title-section">
-		<p>{utcToGermanDate(data.articleContent.publishedAt)}</p>
 		<p><b>{data.articleContent.caption}</b></p>
 		<h1>{data.articleContent.title}</h1>
 	</div>
@@ -33,7 +32,7 @@
 				<figcaption>{data.articleContent.imageCaption}</figcaption>
 			{/if}
 			{#if data.articleContent.imageCreator}
-				<figcaption>Foto: {data.articleContent.imageCreator}</figcaption>
+				<figcaption class="smaller-caption">Foto: {data.articleContent.imageCreator}</figcaption>
 			{/if}
 		</figure>
 	</div>
@@ -68,6 +67,9 @@
 		align-items: center;
 
 		div.title-image {
+			figcaption.smaller-caption {
+				font-size: 0.75rem;
+			}
 			width: 100%;
 			img {
 				width: 100%;

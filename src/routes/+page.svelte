@@ -2,7 +2,6 @@
 	import { gotoArticle } from '$lib/util';
 	import type { PageData } from './$types';
 	import { urlFor } from './../lib/sanity';
-
 	export let data: PageData;
 </script>
 

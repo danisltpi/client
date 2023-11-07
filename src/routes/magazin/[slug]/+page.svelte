@@ -21,22 +21,22 @@
 </svelte:head>
 
 <article class="article-body">
-	<div class="title-section">
-		<p><b>{data.articleContent.caption}</b></p>
-		<h1>{data.articleContent.title}</h1>
-	</div>
-	<div class="title-image">
-		<figure>
-			<img src={urlFor(data.articleContent.image)} alt="bild" />
-			{#if data.articleContent.imageCaption}
-				<figcaption>{data.articleContent.imageCaption}</figcaption>
-			{/if}
-			{#if data.articleContent.imageCreator}
-				<figcaption class="smaller-caption">Foto: {data.articleContent.imageCreator}</figcaption>
-			{/if}
-		</figure>
-	</div>
 	<div class="main-content">
+		<div class="title-section">
+			<h2>{data.articleContent.caption}</h2>
+			<h1>{data.articleContent.title}</h1>
+		</div>
+		<div class="title-image">
+			<figure>
+				<img src={urlFor(data.articleContent.image)} alt="bild" />
+				{#if data.articleContent.imageCaption}
+					<figcaption>{data.articleContent.imageCaption}</figcaption>
+				{/if}
+				{#if data.articleContent.imageCreator}
+					<figcaption class="smaller-caption">Foto: {data.articleContent.imageCreator}</figcaption>
+				{/if}
+			</figure>
+		</div>
 		<PortableText
 			value={data.articleContent.content}
 			components={{
@@ -49,6 +49,9 @@
 </article>
 
 <style lang="scss">
+	figure {
+		margin: 0;
+	}
 	@media (min-width: 768px) {
 		.main-content {
 			width: 66%;
@@ -80,10 +83,17 @@
 		}
 
 		div.title-section {
-			padding-left: 2rem;
-			padding-right: 2rem;
+			h2 {
+				margin: 0;
+				font-weight: 900;
+				font-size: 1.25rem;
+			}
 			h1 {
-				font-weight: 500;
+				line-height: 1.25;
+				margin: 0 0 0.5rem 0;
+				font-size: 2.75rem;
+				font-weight: 900;
+				text-align: start;
 			}
 		}
 	}

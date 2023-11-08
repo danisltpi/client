@@ -8,6 +8,9 @@
 			><Icon iconType="instagram" /></a
 		>
 	</div>
+	<div class="legal">
+		<a href="/impressum">impressum</a>
+	</div>
 	<p>©kennichmagazin</p>
 </footer>
 
@@ -18,6 +21,10 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+	}
+
+	div.legal {
+		margin-top: 1rem;
 	}
 
 	a:hover {

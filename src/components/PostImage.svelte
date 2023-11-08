@@ -13,20 +13,30 @@
 </div>
 
 <style>
+	@media (min-width: 768px) {
+		figure {
+			max-width: 28rem;
+		}
+	}
 	figure {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		margin: 0;
 	}
+
 	figcaption {
 		font-size: 0.75rem;
 	}
+
 	div {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: 1rem 0;
 	}
+
 	img {
 		max-width: 100%;
-		max-height: 40rem;
 	}
 </style>

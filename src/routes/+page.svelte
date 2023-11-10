@@ -33,7 +33,7 @@
 
 <style lang="scss">
 	h4.card-title {
-		font-weight: 500;
+		font-weight: 900;
 	}
 
 	div.flex-cards {

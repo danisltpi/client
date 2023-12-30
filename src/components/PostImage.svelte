@@ -7,7 +7,7 @@
 	<figure>
 		<img src={urlFor(portableText.value)} alt="bild" />
 		{#if portableText.value.creator}
-			<figcaption>Foto: {portableText.value.creator}</figcaption>
+			<figcaption>{portableText.value.creator}</figcaption>
 		{/if}
 	</figure>
 </div>

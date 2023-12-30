@@ -33,7 +33,7 @@
 					<figcaption>{data.articleContent.imageCaption}</figcaption>
 				{/if}
 				{#if data.articleContent.imageCreator}
-					<figcaption class="smaller-caption">Foto: {data.articleContent.imageCreator}</figcaption>
+					<figcaption class="smaller-caption">{data.articleContent.imageCreator}</figcaption>
 				{/if}
 			</figure>
 		</div>

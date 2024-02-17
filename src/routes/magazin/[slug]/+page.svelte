@@ -89,7 +89,7 @@
 				font-size: 1.25rem;
 			}
 			h1 {
-				line-height: 1.25;
+				line-height: 1;
 				margin: 0 0 0.5rem 0;
 				font-size: 2.75rem;
 				font-weight: 900;

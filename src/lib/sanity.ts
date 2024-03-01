@@ -14,8 +14,14 @@ export const client = createClient({
 	useCdn: true
 });
 
+export const fetchArticleCardsByCategory = async (category: string) => {
+	const query = `*[_type == "magazine" && lower(category) == "${category}"] | order(publishedAt desc) {title, caption, image, slug}`;
+	const articles = await client.fetch(query);
+	return articles;
+};
+
 export const fetchArticleCards = async () => {
-	const query = '*[_type == "magazine"] | order(publishedAt desc) {title, caption, image, slug}';
+	const query = `*[_type == "magazine"] | order(publishedAt desc) {title, caption, image, slug}`;
 	const articles = await client.fetch(query);
 	return articles;
 };

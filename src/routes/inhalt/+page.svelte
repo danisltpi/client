@@ -11,6 +11,7 @@
 <style lang="scss">
 	ul {
 		li {
+			font-size: 2.75rem;
 			list-style-type: none;
 			font-weight: 900;
 			margin-top: 1rem;

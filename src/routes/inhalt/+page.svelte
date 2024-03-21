@@ -10,6 +10,7 @@
 
 <style lang="scss">
 	ul {
+		padding-left: 1rem;
 		li {
 			font-size: 2rem;
 			list-style-type: none;

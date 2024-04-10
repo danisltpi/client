@@ -17,6 +17,10 @@
 		figure {
 			max-width: 80%;
 		}
+		img {
+			object-fit: cover;
+			max-height: 90vh;
+		}
 	}
 	figure {
 		display: flex;
@@ -37,7 +41,6 @@
 	}
 
 	img {
-		object-fit: cover;
-		max-height: 90vh;
+		max-width: 100%;
 	}
 </style>

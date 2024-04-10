@@ -15,7 +15,7 @@
 <style>
 	@media (min-width: 768px) {
 		figure {
-			max-width: 90%;
+			max-width: 80%;
 		}
 	}
 	figure {
@@ -37,6 +37,7 @@
 	}
 
 	img {
-		max-width: 100%;
+		object-fit: cover;
+		max-height: 90vh;
 	}
 </style>

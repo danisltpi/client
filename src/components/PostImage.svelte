@@ -14,6 +14,9 @@
 
 <style>
 	@media (min-width: 768px) {
+		figure {
+			max-width: 90%;
+		}
 	}
 	figure {
 		display: flex;

@@ -58,7 +58,7 @@
 		.main-content {
 			width: 70%;
 			.under-title-content {
-				padding: 0 3rem;
+				padding: 0 5rem;
 			}
 		}
 	}

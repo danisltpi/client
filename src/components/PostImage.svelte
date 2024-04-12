@@ -14,9 +14,6 @@
 
 <style>
 	@media (min-width: 768px) {
-		figure {
-			max-width: 80%;
-		}
 		img {
 			object-fit: cover;
 			max-height: 90vh;

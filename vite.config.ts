@@ -7,7 +7,7 @@ export default defineConfig({
 		preprocessorOptions: {
 			sass: {
 				additionalData: `
-          @import '$lib/sass/theme'
+          @use '$lib/sass/theme as *'
         `
 			}
 		}

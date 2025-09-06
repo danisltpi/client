@@ -20,7 +20,7 @@
 </header>
 
 <style lang="scss">
-	@import '$lib/sass/theme';
+	@use '$lib/sass/theme' as *;
 	.hide {
 		visibility: hidden;
 	}

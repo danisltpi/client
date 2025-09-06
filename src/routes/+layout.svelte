@@ -31,7 +31,7 @@
 <Footer />
 
 <style lang="scss">
-	@import '$lib/sass/theme';
+	@use '$lib/sass/theme' as *;
 	@font-face {
 		font-family: 'RDJ-Hand';
 		src: url('/RdjHandPixel-5w3L.otf');

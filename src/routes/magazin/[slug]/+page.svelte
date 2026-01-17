@@ -37,14 +37,16 @@
 				{/if}
 			</figure>
 		</div>
-		<PortableText
-			value={data.articleContent.content}
-			components={{
-				types: {
-					image: PostImage
-				}
-			}}
-		/>
+		<div class="under-title-content">
+			<PortableText
+				value={data.articleContent.content}
+				components={{
+					types: {
+						image: PostImage
+					}
+				}}
+			/>
+		</div>
 	</div>
 </article>
 
@@ -54,7 +56,10 @@
 	}
 	@media (min-width: 768px) {
 		.main-content {
-			width: 66%;
+			width: 70%;
+			.under-title-content {
+				padding: 0 5rem;
+			}
 		}
 	}
 	.main-content {
